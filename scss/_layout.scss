@@ -11,6 +11,10 @@ header {
     background-position: center;
     height: 420px;
     max-width: 100%;
+
+    @include g-sm {
+        background: url(../images/header_mobile.png);
+    }
 }
 
 h1 a {

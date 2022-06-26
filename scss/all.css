@@ -110,6 +110,12 @@ header {
   max-width: 100%;
 }
 
+@media (max-width: 576px) {
+  header {
+    background: url(../images/header_mobile.png);
+  }
+}
+
 h1 a {
   text-indent: 101%;
   overflow: hidden;
