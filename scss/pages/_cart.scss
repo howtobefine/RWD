@@ -1,0 +1,238 @@
+.cart {
+    width: 100%;
+    margin-top: 48px;
+    justify-content: space-around;
+    @include g-sm{
+        display: block;
+    }
+}
+
+// aside
+aside {
+    width: 25%;
+    color: $primary;
+
+    @include g-sm{
+        width: 100%;
+    }
+
+    .aside-title {
+        font-size: $fs-ml;
+        margin-bottom: 16px;
+    }
+
+    i {
+        margin-right: 16px;
+    }
+
+    ul {
+        width: 80%;
+        @include g-sm{
+            width: 100%;
+        }
+    }
+
+    li {
+        border-bottom: 1px solid $primary;
+        padding: 6px;
+
+        &:hover {
+            background: $primary;
+
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    a {
+        color: $primary;
+    }
+}
+
+// toolbar
+.cart-content {
+    width: 74%;
+
+    @include g-sm{
+        width: 100%;
+    }
+
+    .toolbar {
+        justify-content: space-between;
+        margin-bottom: 24px;
+        @include g-sm{
+            display: block;
+        }
+    }
+
+    .searchbar {
+        @include g-sm{
+            margin: 24px 0 20px;
+        }
+        input {
+            padding-right: 100%;
+            @include g-sm{
+                padding-right: 37%;
+            }
+        }
+
+        a {
+            background: $primary;
+            color: #fff;
+            padding: 4px 6px;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    .checkout {
+        position: relative;
+
+        @include g-sm{
+            text-align: end;
+        }
+
+        span {
+            padding: 0 12px;
+            border-right: 1px solid $primary;
+        }
+
+        a {
+            color: $primary;
+            font-size: $fs-ml;
+            padding-left: 12px;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        &-num {
+            position: absolute;
+            top: -4px;
+            right: -6px;
+            font-size: 8px;
+            text-align: center;
+            line-height: 1;
+            background: $warning;
+            color: #fff;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+        }
+    }
+
+}
+
+// cards
+
+.cards{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    &-item{
+        width: 31.33333%;
+        color: $primary;
+        text-align: center;
+        box-shadow: 3px 3px 4px 0 rgba(#000000, 0.16);
+        margin-bottom: 30px;
+        padding-bottom: 10px;
+        position: relative;
+        @include g-md{
+            width: 48%;
+        }
+        @include g-sm{
+            width: 100%;
+        }
+        img{
+            height: 120px;
+            object-fit: cover;
+        }
+    }
+    &-text{
+        h4{
+            font-size: $fs-ml;
+            margin-top: 12px;
+        }
+        small{
+            font-size: $fs-xs;
+            border-bottom: 1px solid $primary;
+            padding-bottom: 12px;
+        }
+        p{
+            font-size: $fs-ml;
+            padding: 30px 0 16px;
+            span{
+                font-weight: bold;
+                font-style: oblique;
+            }
+        }
+    }
+
+    &-btn{
+        color: $warning;
+        border: 2px solid $warning;
+        padding: 1px 17%;
+        border-radius: 3px;
+        &:hover{
+            background: $warning;
+            color: #fff;
+        }
+        i{
+            margin-right: 8px;
+        }
+    }
+    .heart-hollow{
+        position: absolute;
+        color: #fff;
+        top: 2%;
+        left: 3%;
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+
+// ribbon
+.ribbon-wrap {
+    overflow: hidden;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    &::before {
+      content: "";
+      position: absolute;
+      border-bottom: 6px solid #029e77;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent;
+      left: 12px;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      border-top: 6px solid transparent;
+      border-left: 6px solid #029e77;
+      border-right: 6px solid transparent;
+      bottom: 18px;
+      right: -6px;
+    }
+    .ribbon {
+      position: absolute;
+      top: 16px;
+      right: -32px;
+      transform: rotate(45deg);
+      width: 120px;
+      height: 24px;
+      line-height: 24px;
+      background: #0c9;
+      color: #fff;
+      text-align: center;
+      font-size: 14px;
+    }
+  }

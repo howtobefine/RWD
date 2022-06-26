@@ -1,0 +1,118 @@
+// title
+
+.register-title {
+    img {
+        margin: 50px auto 5px;
+    }
+
+    h4 {
+        font-size: $fs-ml;
+        color: $primary;
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+}
+
+// form
+
+.register-content {
+    width: 620px;
+    box-shadow: 3px 3px 4px 0 rgba(#000000, 0.16);
+    border-top: 3px solid $warning;
+    padding: 16px;
+    margin: 0 auto;
+    @include g-md{
+        width: 546px;
+    }
+    
+    @include g-sm{
+        width: 320px;
+    }
+
+
+    h5 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 16px;
+        font-size: $fs-m;
+    }
+
+    p {
+        width: 50%;
+        color: $primary;
+        margin-right: 20px;
+        @include g-sm{
+            width: 100%;
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.register-section {
+    justify-content: space-between;
+    @include g-sm{
+        display: block;
+    }
+}
+
+.register-text {
+    width: 50%;
+    @include g-sm{
+        width: 100%;
+    }
+
+    .text {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: #fff;
+        padding: 8px;
+    }
+
+    i {
+        font-size: $fs-s;
+        padding-left: 8px;
+    }
+
+    .email {
+        margin-bottom: 16px;
+    }
+
+    .password {
+        margin-bottom: 12px;
+    }
+
+    .already {
+        font-size: $fs-s;
+        color: $warning;
+        display: block;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+
+    .register-btn {
+        margin-top: 30px;
+        justify-content: end;
+        a {
+            color: #fff;
+            padding: 6px 48px;
+            border-radius: 3px;
+            background: $warning;
+            margin-top: 30px;
+            text-align: end;
+        }
+
+    }
+}

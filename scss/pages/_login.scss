@@ -1,0 +1,90 @@
+// title
+
+.login-title {
+    img {
+        margin: 50px auto 5px;
+    }
+
+    h4 {
+        font-size: $fs-ml;
+        color: $primary;
+        text-align: center;
+        font-weight: bolder;
+        margin-bottom: 35px;
+    }
+}
+
+// form
+
+.login-content {
+    width: 300px;
+    box-shadow: 3px 3px 4px 0 rgba(#000000, 0.16);
+    border-top: 3px solid $warning;
+    padding: 16px;
+    margin: 0 auto;
+
+    h5 {
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 16px;
+        font-size: $fs-m;
+    }
+
+    label {
+        color: $primary;
+    }
+
+    .text {
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background: #fff;
+        padding: 8px;
+    }
+
+    .email {
+        margin-bottom: 16px;
+    }
+
+    i {
+        font-size: $fs-s;
+        padding-left: 8px;
+    }
+
+    a {
+        font-size: $fs-s;
+        color: $warning;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.btn {
+    justify-content: space-between;
+    margin-top: 30px;
+
+    a {
+        color: #fff;
+        padding: 4px 48px;
+        border-radius: 3px;
+
+        &:first-child {
+            background: rgba(#000000, 0.35);
+        }
+
+        &:last-child {
+            background: $warning;
+        }
+    }
+}

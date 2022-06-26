@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: Microsoft JhengHei !important;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
